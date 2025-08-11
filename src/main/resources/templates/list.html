@@ -10,6 +10,10 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" th:href="@{/css/style.css}" />
   </head>
   <body>
@@ -33,7 +37,9 @@
             <td data-th-text="${task.name}"></td>
             <td data-th-text="${{task.date}}"></td>
             <td>
-              <a th:href="@{'/edit/'+${task.id}}">Editar</a>
+              <a th:href="@{'/edit/'+${task.id}}">
+                <i class="fa-solid fa-pen"></i>
+              </a>
             </td>
           </tr>
         </tbody>
