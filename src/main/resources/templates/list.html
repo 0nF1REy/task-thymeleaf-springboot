@@ -17,25 +17,27 @@
     <div th:replace="fragments :: navbar"></div>
 
     <!-- main content -->
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Nome da tarefa</th>
-          <th scope="col">Data de execução</th>
-          <th scope="col">#</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr data-th-each="task : ${tasks}">
-          <td data-th-text="${task.id}"></td>
-          <td data-th-text="${task.name}"></td>
-          <td data-th-text="${{task.date}}"></td>
-          <td>
-            <a th:href="@{'/edit/'+${task.id}}">Editar</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome da tarefa</th>
+            <th scope="col">Data de execução</th>
+            <th scope="col">#</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-th-each="task : ${tasks}">
+            <td data-th-text="${task.id}"></td>
+            <td data-th-text="${task.name}"></td>
+            <td data-th-text="${{task.date}}"></td>
+            <td>
+              <a th:href="@{'/edit/'+${task.id}}">Editar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
