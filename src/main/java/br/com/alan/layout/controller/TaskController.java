@@ -4,6 +4,7 @@ import br.com.alan.layout.model.Task;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +24,13 @@ public class TaskController {
         Long id = tasks.size() + 1L;
         tasks.add(new Task(id, task.getName(), task.getDate()));
 
-        return "list";
+        return "redirect:/list";
+    }
+
+    @GetMapping("/list")
+    public ModelAndView list() {
+        ModelAndView mv = new ModelAndView("list");
+        mv.addObject("tasks", tasks);
+        return mv;
     }
 }

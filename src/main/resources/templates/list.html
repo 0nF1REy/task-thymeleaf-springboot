@@ -13,6 +13,23 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <span>Lista de tarefa</span>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome da tarefa</th>
+          <th scope="col">Data de execução</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-th-each="task : ${tasks}">
+          <td data-th-text="${task.id}"></td>
+          <td data-th-text="${task.name}"></td>
+          <td data-th-text="${{task.date}}"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="/create">Cadastro</a>
   </body>
 </html>
