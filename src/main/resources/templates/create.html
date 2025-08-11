@@ -19,15 +19,31 @@
         <label for="exampleInputEmail1" class="form-label"
           >Nome da tarefa</label
         >
-        <input type="text" class="form-control" name="name" th:value="${task.name}" />
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          th:value="${task.name}"
+        />
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label"
           >Data de execução</label
         >
-        <input type="text" class="form-control" name="date" th:value="${{task.date}}"/>
+        <input
+          type="text"
+          class="form-control"
+          name="date"
+          th:value="${{task.date}}"
+        />
       </div>
-      <button type="submit" class="btn btn-primary">Cadastrar</button>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        th:text="${task.id} != null ? 'Atualizar' : 'Cadastrar'"
+      >
+        Cadastrar
+      </button>
     </form>
   </body>
 </html>
