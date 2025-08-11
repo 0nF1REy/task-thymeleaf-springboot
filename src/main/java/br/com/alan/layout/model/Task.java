@@ -21,7 +21,7 @@ public class Task {
     @DateTimeFormat(pattern = "dd/MM/yyyy HH:mm:ss")
     private Date date;
 
-    public void SetId(Long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
