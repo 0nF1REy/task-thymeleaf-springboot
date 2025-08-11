@@ -10,25 +10,13 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/create"
-                >Cadastro</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/list">Listagem</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!-- navbar -->
+    <div th:replace="fragments :: navbar"></div>
+
+    <!-- main content -->
     <form method="POST" action="/create" th:object="${task}">
       <input type="hidden" name="id" th:value="${task.id}" />
       <div class="mb-3">
