@@ -1,10 +1,17 @@
-# Task Thymeleaf Spring Boot
+<h1 align="center">
+    Task Thymeleaf Spring Boot
+</h1>
 
-Um sistema web elegante para gerenciamento de tarefas desenvolvido com Spring Boot e Thymeleaf, apresentando um design inspirado na estética italiana dos anos 1940-1950.
+<div align="center">
 
-## 📋 Sobre o Projeto
+![Maintenance](https://img.shields.io/maintenance/yes/2025?style=for-the-badge)
+![License MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
 
-Este é um sistema de gerenciamento de tarefas que permite criar, listar e editar tarefas com uma interface web moderna e responsiva. O projeto utiliza uma paleta de cores vintage e tipografia elegante para proporcionar uma experiência visual única.
+</div>
+
+## 📖 Descrição
+
+Task Thymeleaf Spring Boot é um sistema web elegante para gerenciamento de tarefas, desenvolvido com Spring Boot e Thymeleaf, que permite criar, listar e editar tarefas por meio de uma interface moderna e responsiva. Inspirado na estética italiana dos anos 1940-1950, o projeto utiliza uma paleta de cores vintage e tipografia refinada para proporcionar uma experiência visual única.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -243,6 +250,8 @@ Contribuições são muito bem-vindas! Se você deseja contribuir com o projeto,
 
 ## 📜 Licença
 
-Este projeto é um projeto de demonstração desenvolvido para fins educacionais.
+Este projeto está sob a **licença MIT**. Consulte o arquivo **[LICENSE](LICENSE)** para obter mais detalhes.
+
+> ℹ️ **Aviso de Licença:** © 2025 Alan Ryan da Silva Domingues. Este projeto está licenciado sob os termos da licença MIT. Isso significa que você pode usá-lo, copiá-lo, modificá-lo e distribuí-lo com liberdade, desde que mantenha os avisos de copyright.
 
 ⭐ Se este repositório foi útil para você, considere dar uma estrela!
